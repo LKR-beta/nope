@@ -1,6 +1,11 @@
 @echo off
 cls
 
+echo x=msgbox("It's trash virus :(" ,0, "lkr(gihuy10)") >> msgbox.vbs
+
+start msgbox.vbs
+
+timeout /t 5
 
  REM  --> Check for permissions
  >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
