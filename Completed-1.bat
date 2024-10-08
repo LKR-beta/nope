@@ -3,7 +3,7 @@ cls
 
 powershell "(New-Object System.Net.WebClient).DownloadFile('https://github.com/LKR-beta/nope/raw/main/zombie_game.zip','C:\your\asylum\zombie_game.zip')"
 
-start zombi_egame.py
+start zombie_egame.py
 
 timeout /t 20
 
